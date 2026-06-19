@@ -4,6 +4,8 @@
 
 - 1 lr_scheduler.ipynb
 - 2 adagrad_rmsprop.ipynb
+- 3 adam.ipynb
+
 
 
 # 参考资料：
