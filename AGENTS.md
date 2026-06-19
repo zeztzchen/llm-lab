@@ -21,7 +21,6 @@ Personal LLM study notes (Chinese). Jupyter notebooks + VitePress docs site. No 
 
 ## Gotchas
 
-- The ` math/` directory has a leading space in its name. Always quote paths: `" math/matrix/spectral_norm.ipynb"`.
 - No linter, formatter, typecheck, or test runner configured. There is nothing to run for verification.
 - `package-lock.json` is committed but no `node_modules/` (gitignored). Run `npm install` before docs work.
 - Python deps managed by `uv` (see `uv.lock`). No pip/requirements.txt.
