@@ -1,6 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
 node_modules/
+
+# VitePress
 docs/.vitepress/dist/
 docs/.vitepress/cache/
+
+# OS
 .DS_Store
 
+# AI tools
 .claude
