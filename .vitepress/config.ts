@@ -7,6 +7,7 @@ export default defineConfig({
   description: 'LLM 原理与工程实践的个人学习记录',
   lang: 'zh-CN',
   srcExclude: ['README.md', 'AGENTS.md'],
+  lastUpdated: true,
 
   markdown: {
     config: (md) => {
@@ -15,17 +16,12 @@ export default defineConfig({
   },
 
   themeConfig: {
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '基础笔记', link: '/basis/micrograd' },
-      { text: '路线图', link: '/roadmap/roadmap' },
-      { text: '优化器', link: '/optimizer/' },
-      { text: 'GitHub', link: 'https://github.com/dundunkirk/llm-lab' },
-    ],
+    nav: [],
 
     sidebar: [
       {
         text: '基础笔记',
+        collapsed: false,
         items: [
           { text: 'Micrograd', link: '/basis/micrograd' },
           { text: 'XGBoost', link: '/basis/xgboost' },
@@ -33,6 +29,7 @@ export default defineConfig({
       },
       {
         text: '路线图',
+        collapsed: false,
         items: [
           { text: '学习路线', link: '/roadmap/roadmap' },
           { text: '12 周执行计划', link: '/roadmap/study_plan' },
@@ -43,7 +40,8 @@ export default defineConfig({
         ],
       },
       {
-        text: '专题整理',
+        text: '专题笔记',
+        collapsed: false,
         items: [
           { text: '优化器', link: '/optimizer/' },
         ],
@@ -60,6 +58,19 @@ export default defineConfig({
 
     footer: {
       message: 'LLM 原理与工程实践的个人学习记录',
+    },
+
+    lastUpdated: {
+      text: 'Last updated',
+      formatOptions: {
+        dateStyle: 'medium',
+        timeStyle: 'short',
+      },
+    },
+
+    docFooter: {
+      prev: 'Previous',
+      next: 'Next',
     },
   },
 })

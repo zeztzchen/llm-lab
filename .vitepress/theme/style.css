@@ -3,13 +3,15 @@
   --vp-c-brand-2: #1d4ed8;
   --vp-c-brand-3: #1e40af;
   --vp-c-brand-soft: rgba(37, 99, 235, 0.12);
-  --vp-c-bg: #fbfcff;
-  --vp-c-bg-alt: #f3f6fb;
-  --vp-c-bg-soft: #eef4ff;
-  --vp-c-divider: rgba(30, 64, 175, 0.14);
-  --vp-c-text-1: #172033;
-  --vp-c-text-2: #4b5875;
-  --vp-c-text-3: #697591;
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f8fafc;
+  --vp-c-bg-soft: #f1f5f9;
+  --vp-c-divider: #e5e7eb;
+  --vp-c-text-1: #111827;
+  --vp-c-text-2: #4b5563;
+  --vp-c-text-3: #6b7280;
+  --vp-sidebar-width: 320px;
+  --vp-layout-max-width: 1440px;
 
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(120deg, #2563eb 0%, #06b6d4 48%, #14b8a6 100%);
@@ -41,8 +43,86 @@ body {
 
 .VPNav {
   border-bottom: 1px solid var(--vp-c-divider);
-  background: color-mix(in srgb, var(--vp-c-bg) 88%, transparent);
-  backdrop-filter: saturate(160%) blur(16px);
+  background: var(--vp-c-bg);
+}
+
+.VPNavBar.has-sidebar .content,
+.VPNavBar:not(.has-sidebar) .content {
+  border-bottom: 0;
+}
+
+.VPNavBarTitle .title {
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.VPNavBarTitle .title::before {
+  display: inline-grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  background: #dbeafe;
+  color: #2563eb;
+  content: "L";
+  font-weight: 800;
+}
+
+.VPNavBarSearch {
+  padding-left: 16px;
+}
+
+.VPNavBarSearch .DocSearch-Button {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.VPSidebar {
+  border-right: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+}
+
+.VPSidebar .curtain {
+  background: var(--vp-c-bg);
+}
+
+.VPSidebarItem .item {
+  border-radius: 6px;
+}
+
+.VPSidebarItem.level-0 > .item > .link > .text,
+.VPSidebarItem.level-0 > .item > .text {
+  font-weight: 600;
+}
+
+.VPSidebarItem.is-active > .item {
+  background: #e8f2ff;
+}
+
+.VPSidebarItem.is-active > .item .text {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.VPContent.has-sidebar {
+  padding-left: var(--vp-sidebar-width);
+}
+
+.VPDoc.has-sidebar.has-aside .content-container {
+  max-width: 820px;
+}
+
+.VPDoc.has-sidebar .container {
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.VPDoc .aside {
+  padding-left: 32px;
 }
 
 .VPHero {
@@ -105,15 +185,18 @@ body {
 
 .vp-doc {
   line-height: 1.85;
+  font-size: 16px;
 }
 
 .vp-doc h1 {
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
+  font-size: 36px;
+  font-weight: 800;
   letter-spacing: 0;
 }
 
 .vp-doc h2 {
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
   border-top: 1px solid var(--vp-c-divider);
   padding-top: 28px;
 }
@@ -172,5 +255,28 @@ body {
 
   .vp-doc table {
     display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPNavBar.has-sidebar .title {
+    border-bottom: 0;
+  }
+
+  .VPSidebar {
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 959px) {
+  .VPContent.has-sidebar {
+    padding-left: 0;
+  }
+
+  .VPDoc.has-sidebar .container {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
