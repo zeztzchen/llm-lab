@@ -13,5 +13,8 @@ node_modules/
 # OS
 .DS_Store
 
+# Local reference files
+books/
+
 # AI tools
 .claude
