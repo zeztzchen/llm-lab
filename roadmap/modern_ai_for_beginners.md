@@ -24,7 +24,7 @@ modern AI for beginners
 ## PyTorch、深度学习基础、数学基础
 
 - 技术栈上主要是围绕 PyTorch 展开，如下我的 B 站系列（可能是最早稳定的一个）
-    - [经典神经网络模型拓扑结构（pytorch）](htt就是数学、计算理论以及代码的三位一体（当然受限于我自己的能力），可能没那么高的高度，但我追求的一种直观，容易理解，肯定是有的；ps://space.bilibili.com/59807853/channel/collectiondetail?sid=446911)
+    - [经典神经网络模型拓扑结构（pytorch）](https://space.bilibili.com/59807853/channel/collectiondetail?sid=446911)
 
 - 数学基础，如下我的 B 站系列
     - [深度学习的数学基础](https://space.bilibili.com/59807853/channel/collectiondetail?sid=462509)

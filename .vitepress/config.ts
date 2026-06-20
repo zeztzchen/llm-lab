@@ -6,6 +6,7 @@ export default defineConfig({
   title: 'llm-lab',
   description: 'LLM 原理与工程实践的个人学习记录',
   lang: 'zh-CN',
+  srcExclude: ['README.md', 'AGENTS.md'],
 
   markdown: {
     config: (md) => {
@@ -16,7 +17,9 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
+      { text: '基础笔记', link: '/basis/micrograd' },
       { text: '路线图', link: '/roadmap/roadmap' },
+      { text: '优化器', link: '/optimizer/' },
       { text: 'GitHub', link: 'https://github.com/dundunkirk/llm-lab' },
     ],
 
@@ -36,6 +39,13 @@ export default defineConfig({
           { text: '学习资源', link: '/roadmap/llm_link' },
           { text: 'modern_ai_for_beginners', link: '/roadmap/modern_ai_for_beginners' },
           { text: '如何学习大模型', link: '/roadmap/how_to_learn_llm' },
+          { text: '如何学习强化学习', link: '/roadmap/how_to_learn_rl' },
+        ],
+      },
+      {
+        text: '专题整理',
+        items: [
+          { text: '优化器', link: '/optimizer/' },
         ],
       },
     ],

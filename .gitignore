@@ -7,8 +7,8 @@ __pycache__/
 node_modules/
 
 # VitePress
-docs/.vitepress/dist/
-docs/.vitepress/cache/
+.vitepress/dist/
+.vitepress/cache/
 
 # OS
 .DS_Store
