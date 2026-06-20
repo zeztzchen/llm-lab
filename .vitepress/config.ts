@@ -20,7 +20,7 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '基础笔记',
+        text: 'Basics',
         collapsed: false,
         items: [
           { text: 'Micrograd', link: '/basis/micrograd' },
@@ -28,22 +28,22 @@ export default defineConfig({
         ],
       },
       {
-        text: '路线图',
+        text: 'Roadmap',
         collapsed: false,
         items: [
-          { text: '学习路线', link: '/roadmap/roadmap' },
-          { text: '12 周执行计划', link: '/roadmap/study_plan' },
-          { text: '学习资源', link: '/roadmap/llm_link' },
-          { text: 'modern_ai_for_beginners', link: '/roadmap/modern_ai_for_beginners' },
-          { text: '如何学习大模型', link: '/roadmap/how_to_learn_llm' },
-          { text: '如何学习强化学习', link: '/roadmap/how_to_learn_rl' },
+          { text: 'Learning Roadmap', link: '/roadmap/roadmap' },
+          { text: '12-Week Plan', link: '/roadmap/study_plan' },
+          { text: 'Resources', link: '/roadmap/llm_link' },
+          { text: 'Modern AI for Beginners', link: '/roadmap/modern_ai_for_beginners' },
+          { text: 'How to Learn LLM', link: '/roadmap/how_to_learn_llm' },
+          { text: 'How to Learn RL', link: '/roadmap/how_to_learn_rl' },
         ],
       },
       {
-        text: '专题笔记',
+        text: 'Topics',
         collapsed: false,
         items: [
-          { text: '优化器', link: '/optimizer/' },
+          { text: 'Optimizers', link: '/optimizer/' },
         ],
       },
     ],
@@ -57,7 +57,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'LLM 原理与工程实践的个人学习记录',
+      message: 'Personal notes on LLM fundamentals and engineering practice',
     },
 
     lastUpdated: {
